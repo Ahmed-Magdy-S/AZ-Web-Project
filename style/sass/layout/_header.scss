@@ -1,0 +1,25 @@
+@use "../abstraction/variables"as *;
+
+.header {
+    background: $color-primary;
+
+    &__content {
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+
+        &-info {
+            width: 50%;
+            p {
+                margin: 2rem 0;
+            }
+        }
+
+        &-img {
+            width: 50%;
+        }
+
+    }
+
+
+}

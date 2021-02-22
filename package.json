@@ -1,0 +1,14 @@
+{
+  "name": "az-web-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass style/sass/main-sass.scss style/main-style.css --watch"
+  },
+  "author": "Ahmed Magdy Seleem",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}

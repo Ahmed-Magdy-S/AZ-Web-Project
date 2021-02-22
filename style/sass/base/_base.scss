@@ -1,0 +1,34 @@
+@use "../abstraction/variables"as *;
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    padding: 5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

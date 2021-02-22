@@ -1,0 +1,97 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  padding: 5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.brand-letter {
+  color: #3671E9;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+span.free {
+  text-decoration: underline;
+}
+
+.header {
+  background: #0D0D2B;
+}
+.header__content {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+}
+.header__content-info {
+  width: 50%;
+}
+.header__content-info p {
+  margin: 2rem 0;
+}
+.header__content-img {
+  width: 50%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__brand {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+.nav__list li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.nav__list a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  transition: all 0.2s ease-in;
+  border-radius: 10px;
+}
+.nav__list a:hover {
+  background-color: #3671E9;
+}
+
+/*# sourceMappingURL=main-style.css.map */

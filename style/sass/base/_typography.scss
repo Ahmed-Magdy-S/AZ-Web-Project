@@ -1,0 +1,19 @@
+@use "../abstraction/variables"as *;
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 6.4rem;
+    font-weight: 700;
+    color: $color-white;
+    margin-bottom: 5rem;
+}
+
+.brand-letter {
+    color: $accent;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+span.free {
+    text-decoration: underline;
+}
