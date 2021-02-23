@@ -56,7 +56,7 @@ h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   margin-bottom: 2rem;
-  padding: 2.5rem;
+  padding: 2rem 0;
 }
 
 .brand-letter {
@@ -78,13 +78,34 @@ span.free {
   align-items: center;
 }
 .header__content-info {
-  width: 50%;
+  width: 60%;
 }
 .header__content-info p {
   margin: 2rem 0;
 }
+.header__content-info .offer {
+  background: rgba(255, 255, 255, 0.1);
+  width: 38.5rem;
+  height: 4rem;
+  border-radius: 32px;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+.header__content-info .offer span {
+  color: #0D0D2B;
+  background-color: #fff;
+  line-height: 2.4rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1rem;
+  margin-right: 1rem;
+  margin-left: -1rem;
+}
 .header__content-img {
-  width: 50%;
+  width: 40%;
 }
 
 .nav {
@@ -174,6 +195,17 @@ span.free {
 .section-plan .plan-box--paid {
   background-color: #2B076E;
   color: #fff;
+}
+
+.section-earn {
+  background: linear-gradient(to bottom, #2B076E, #0D0D2B);
+}
+.section-earn h3 {
+  text-decoration: underline;
+}
+.section-earn p {
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 /*# sourceMappingURL=main-style.css.map */

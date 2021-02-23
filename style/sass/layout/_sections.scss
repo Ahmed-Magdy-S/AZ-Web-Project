@@ -1,5 +1,6 @@
 @use "../abstraction/variables"as *;
 
+//section plan
 .section-plan {
     h2 {
         color: $color-primary;
@@ -40,9 +41,23 @@
 
             background-color: $color-secondary;
             color: $color-white;
-
         }
-
     }
-
 }
+
+//End .section-plan
+//Start Section-Earn
+.section-earn {
+    background: linear-gradient(to bottom, $color-secondary, $color-primary);
+    h3 {
+        text-decoration: underline;
+    }
+    p {
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
+}
+//end section-Earn
+//Start Section-FAQ
+
+//End-Section-FAQ

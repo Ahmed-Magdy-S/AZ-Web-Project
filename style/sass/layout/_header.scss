@@ -9,14 +9,38 @@
         align-items: center;
 
         &-info {
-            width: 50%;
+            width: 60%;
+
             p {
                 margin: 2rem 0;
+            }
+
+            .offer {
+                background: rgba(255, 255, 255, 0.1);
+                width: 38.5rem;
+                height: 4rem;
+                border-radius: 32px;
+                font-size: 1.6rem;
+                line-height: 4rem;
+                text-align: center;
+                padding: 0 2rem;
+
+                span {
+                    color: $color-primary;
+                    background-color: $color-white;
+                    line-height: 2.4rem;
+                    border-radius: 30px;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    padding: 0 1rem;
+                    margin-right: 1rem;
+                    margin-left: -1rem;
+                }
             }
         }
 
         &-img {
-            width: 50%;
+            width: 40%;
         }
 
     }
