@@ -1,0 +1,35 @@
+@use "../abstraction/variables"as *;
+
+.btn {
+    display: block;
+    margin: 2.5rem auto;
+    width: 22rem;
+    border-radius: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    transition: all .2s;
+    padding: 2rem 3rem;
+
+
+    &--primary {
+        background-color: $accent;
+        color: $color-white;
+        &:hover {
+            background-color: $color-white;
+           color: $accent;
+        }
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+        color: $color-white;
+
+        &:hover {
+            color: $color-secondary;
+            background-color: $color-white;
+            border: 1px solid $color-secondary;
+        }
+
+    }
+}
