@@ -1,0 +1,119 @@
+@media(max-width:65.5em) {
+    .nav {
+        &__brand {
+            font-size: 2.4rem;
+        }
+
+        li {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 62.5em) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 59.1em) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width:57.5em) {
+    .nav {
+        &__brand {
+            font-size: 2rem;
+        }
+
+        li {
+            font-size: 1.8rem;
+        }
+    }
+
+    .header {
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        .offer {
+            width: 35.5rem;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media(max-width:53em) {
+    .nav {
+        &__brand {
+            font-size: 2rem;
+        }
+
+        li {
+            font-size: 1.6rem;
+            margin: 0 1rem;
+            a {
+                padding: .5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 46em) {
+    .header__content-info {
+        width: 65%;
+
+    }
+
+    .header__content-img {
+        width: 35%;
+
+    }
+
+    .header {
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+
+        .offer {
+            width: 30rem;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width:40.5em) {
+    html {
+        font-size: 9px;
+    }
+}
+@media (max-width:36.25em) {
+    html {
+        font-size: 8px;
+    }
+}
+@media (max-width:32.5em) {
+    html {
+        font-size: 7px;
+    }
+}
+@media (max-width:28em) {
+    html {
+        font-size: 6px;
+    }
+}
+@media (max-width:23.25em) {
+    html {
+        font-size: 5px;
+    }
+}

@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -49,6 +50,7 @@ h2 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
+  padding: 2rem;
 }
 
 h3 {
@@ -57,6 +59,11 @@ h3 {
   font-weight: 700;
   margin-bottom: 2rem;
   padding: 2rem 0;
+}
+
+h4 {
+  font-size: 2.6rem;
+  font-weight: 700;
 }
 
 .brand-letter {
@@ -111,6 +118,7 @@ span.free {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 .nav__brand {
   font-size: 2.8rem;
@@ -172,12 +180,12 @@ span.free {
   flex-wrap: wrap;
 }
 .section-plan .plan-box-table {
-  width: 40rem;
+  width: 400px;
   padding: 2rem;
   margin: 1rem;
   flex-grow: 1;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   border-radius: 15px;
 }
 .section-plan .plan-box-table .item {
@@ -206,6 +214,224 @@ span.free {
 .section-earn p {
   font-size: 1.8rem;
   line-height: 1.6;
+}
+
+.section-FAQ {
+  background: #0D0D2B;
+}
+.section-FAQ h2 {
+  width: 85%;
+  margin: 0 auto;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-bottom: 5rem;
+}
+.section-FAQ .question {
+  width: 85%;
+  margin: 4rem auto;
+}
+.section-FAQ .question h4 {
+  position: relative;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 2rem;
+  padding-right: 6rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.section-FAQ .question h4:hover {
+  background-color: #3671E9;
+}
+.section-FAQ .question h4::after {
+  content: url("../icons/add-circle-outline.svg");
+  position: absolute;
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  line-height: 2.8rem;
+  cursor: pointer;
+}
+.section-FAQ .question .active-h4 {
+  background-color: #3671E9;
+}
+.section-FAQ .question .active-h4::after {
+  content: url("../icons/remove-circle-outline.svg");
+  position: absolute;
+  display: inline-block;
+  width: 2.8rem;
+  height: 2.8rem;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  line-height: 2.8rem;
+  cursor: pointer;
+}
+.section-FAQ .question p {
+  height: 0;
+  transition: all 0.2s;
+  padding: 0 4rem;
+  opacity: 0;
+}
+.section-FAQ .question .active-p {
+  padding: 2rem;
+  padding-right: 6rem;
+  opacity: 1;
+}
+
+.section-contact {
+  background: #0D0D2B;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.section-contact ul {
+  text-align: center;
+}
+.section-contact ul li {
+  display: inline-block;
+  margin: 0 2rem;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+}
+.section-contact ul a {
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.2s;
+  transform: scale(1, 1);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section-contact ul a svg {
+  display: block;
+  fill: #fff;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.section-contact ul a:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.footer {
+  background-color: #0D0D2B;
+  text-align: center;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 700;
+  padding: 2rem;
+}
+.footer span {
+  color: #3671E9;
+  font-weight: 900;
+}
+.footer .credit {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.footer .credit a,
+.footer .credit a:visited,
+.footer .credit a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 65.5em) {
+  .nav__brand {
+    font-size: 2.4rem;
+  }
+  .nav li {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 62.5em) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 59.1em) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 57.5em) {
+  .nav__brand {
+    font-size: 2rem;
+  }
+  .nav li {
+    font-size: 1.8rem;
+  }
+
+  .header h1 {
+    font-size: 4.5rem;
+  }
+  .header p {
+    font-size: 2rem;
+  }
+  .header .offer {
+    width: 35.5rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 53em) {
+  .nav__brand {
+    font-size: 2rem;
+  }
+  .nav li {
+    font-size: 1.6rem;
+    margin: 0 1rem;
+  }
+  .nav li a {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 46em) {
+  .header__content-info {
+    width: 65%;
+  }
+
+  .header__content-img {
+    width: 35%;
+  }
+
+  .header h1 {
+    font-size: 4rem;
+  }
+  .header p {
+    font-size: 1.8rem;
+  }
+  .header .offer {
+    width: 30rem;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 40.5em) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 36.25em) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 32.5em) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 28em) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 23.25em) {
+  html {
+    font-size: 5px;
+  }
 }
 
 /*# sourceMappingURL=main-style.css.map */
