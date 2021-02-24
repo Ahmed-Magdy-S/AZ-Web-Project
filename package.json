@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "browserslist": [
+    "defaults", "last 10 versions", "not dead"
+  ],
   "scripts": {
-    "watch-sass": "sass style/sass/main-sass.scss style/main-style.css --watch"
+    "watch-sass": "sass style/sass/main-sass.scss style/main-style.css --watch",
+    "autoprefix": "npx postcss style/main-style.css --use autoprefixer -d style/",
+    "compress-sass": "sass style/main-style.css style/main-style.css compressed"
+
   },
   "author": "Ahmed Magdy Seleem",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
     "sass": "^1.32.8"
   }
 }
