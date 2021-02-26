@@ -2,24 +2,29 @@
 
 .header {
     background: $color-primary;
+
     &__content {
         margin-top: 10rem;
         display: flex;
         align-items: center;
+
         &-info {
             width: 60%;
+
             p {
                 margin: 2rem 0;
             }
+
             .offer {
                 background: rgba(255, 255, 255, 0.1);
-                width: 38.5rem;
+                width: 38rem;
                 height: 4rem;
                 border-radius: 32px;
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 line-height: 4rem;
                 text-align: center;
                 padding: 0 2rem;
+
                 span {
                     color: $color-primary;
                     background-color: $color-white;
@@ -33,6 +38,7 @@
                 }
             }
         }
+
         &-img {
             width: 40%;
         }
