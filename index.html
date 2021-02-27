@@ -26,7 +26,7 @@
                 </p>
             </div>
             <ul class="nav__list">
-                <li><a href="#section-plan">Plans</a></li>
+                <li><a href="#section-plan">Services</a></li>
                 <li><a href="#section-earn">Earn Money</a></li>
                 <li><a href="#section-FAQ">FAQ</a></li>
                 <li><a href="#section-contact">Contact</a></li>
@@ -38,8 +38,8 @@
                 <p class="offer"><span>Stay Tuned!</span> You Can Earn Money with Us</p>
                 <h1>Get Your Website That is Created from <span class="brand-letter">A</span> to <span
                         class="brand-letter">Z</span></h1>
-                <p>With <span class="brand-text">"AZ Web Project"</span> You can get your website <span class="free">for
-                        free</span> which will be created specifically for you!
+                <p>With <span class="brand-text">"AZ Web Project"</span> You can get your website for
+                    free which will be created specifically for you!
                 </p>
             </div>
             <div class="header__content-img">
@@ -50,7 +50,7 @@
     <!-- End Header -->
     <!-- Start Section Plans -->
     <section class="section-plan container" id="section-plan">
-        <h2>See Our Plans</h2>
+        <h2>Our Services</h2>
         <div class="plan-box">
             <div class="plan-box-table plan-box--free">
                 <h3>Free Service</h3>
@@ -94,7 +94,7 @@
         <div class="question">
             <h4>What is "AZ Web Project" ?</h4>
             <div>
-                <p>It's a website founded by "Ahmed Magdy Seleem", Its main purpose is to build websites for clients and
+                <p>It's a freelancing website which its main purpose is to build websites for clients and
                     introduced 2 types of services, one for free and the other one is paid according to requirments
                     needed.
                 </p>
@@ -151,7 +151,7 @@
     <section class="section-contact container" id="section-contact">
         <h2>Contact Us</h2>
         <ul>
-            <li><a target="_blank" href="https://www.facebook.com/Ahmed.Magdy.S.19">
+            <li><a target="_blank" href="https://www.facebook.com/AZWebProject">
                     <svg class="facebook">
                         <use href="icons/icons-sprite.svg#logo-facebook"></use>
                     </svg>
@@ -172,18 +172,35 @@
                 </a>
             </li>
         </ul>
-        <p>Send us If you have a feedback, It's absolutely welcomed</p>
-        <p>Email: Ahmed.Magdy.S.19@gmail.com</p>
     </section>
     <!-- End Section-Contact -->
     <footer class="footer">
         <p>Copyright &copy; 2021 <span>AZ Web Project</span> . All rights reserved.</p>
-        <p>Developed by <span>Ahmed Magdy Seleem</span></p>
-        <p class="credit">Design Inspired by <a href="https://dribbble.com/illiyinstudio">Illiyin Studio</a> &amp; <a
-                href="http://www.freepik.com">by pikisuperstar / Freepik</a>
-        </p>
     </footer>
     <script src="js/app.js"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="111242147264542">
+    </div>
 </body>
 
 </html>
